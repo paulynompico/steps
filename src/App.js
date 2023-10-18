@@ -10,11 +10,11 @@ export default function App() {
   const [step, setStep] = useState(1);
 
   function previous() {
-    setStep(step - 1);
+    if (step > 1) setStep(step - 1);
   }
 
   function next() {
-    setStep(step + 1);
+    if (step < 3) setStep(step + 1);
   }
 
   return (
