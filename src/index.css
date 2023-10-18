@@ -32,7 +32,7 @@ body {
 }
 
 .numbers .active {
-  background-color: #7950f2;
+  background-color: #1e789c;
   color: #fff;
 }
 
@@ -87,5 +87,5 @@ h3 {
 }
 
 .close:hover {
-  color: #7950f2;
+  color: #0f6385;
 }
