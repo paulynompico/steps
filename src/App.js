@@ -19,11 +19,12 @@ export default function App() {
   }
 
   function close() {
-    isOpen ? setIsOpen(false) : setIsOpen(true);
+    setIsOpen(!isOpen);
+    setStep(1);
   }
 
   return (
-    <div>
+    <>
       <button className="close" onClick={close}>
         &times;
       </button>
@@ -55,6 +56,6 @@ export default function App() {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }
