@@ -1,9 +1,9 @@
 import { useState } from "react";
 
 const messages = [
-  "Learn React ⚛️",
+  "Learn programming 👩🏻‍💻",
   "Apply for jobs 💼",
-  "Invest your new income 🤑",
+  "Get more dogs 🐶",
 ];
 
 export default function App() {
@@ -20,9 +20,9 @@ export default function App() {
   return (
     <div className="steps">
       <div className="numbers">
-        <div className={`${step >= 1 ? "active" : ""}`}>1</div>
-        <div className={`${step >= 2 ? "active" : ""}`}>2</div>
-        <div className={`${step >= 3 ? "active" : ""}`}>3</div>
+        <div className={step >= 1 ? "active" : ""}>1</div>
+        <div className={step >= 2 ? "active" : ""}>2</div>
+        <div className={step >= 3 ? "active" : ""}>3</div>
       </div>
 
       <p className="message">
